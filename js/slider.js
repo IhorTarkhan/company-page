@@ -6,7 +6,7 @@ const callbackTimeout = 50;
 const imgDuration = 4000;
 
 function slideShow() {
-  imgArray.forEach(it => (it.style.display = "none"));
+  imgArray.forEach((it) => (it.style.display = "none"));
   imgArray[slideIndex].style.display = "block";
   setTimeout(() => {
     imgArray[slideIndex].classList.remove("fadeOut");

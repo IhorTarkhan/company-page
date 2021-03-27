@@ -13,6 +13,10 @@
   border-right: 1px solid;
 }
 
+.menu li h2 {
+  display: inline;
+}
+
 .menu li:last-child {
   border-right: none;
 }
