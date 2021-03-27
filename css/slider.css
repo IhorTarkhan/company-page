@@ -1,3 +1,7 @@
+.slider {
+  grid-area: slider;
+}
+
 .slide {
   opacity: 1;
   transition: opacity 500ms;
