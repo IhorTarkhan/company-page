@@ -1,3 +1,39 @@
 .header {
   grid-area: header;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.header .company-logo {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.header .company-img {
+  max-width: 100px;
+}
+
+.header .company-info {
+  flex-grow: 3;
+}
+
+.header .company-name {
+  grid-area: header;
+}
+
+.header .company-title {
+  grid-area: header;
+}
+
+@media (min-width: 960px) {
+  .header {
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .header .company-img {
+    max-width: 200px;
+  }
 }

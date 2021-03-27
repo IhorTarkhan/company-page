@@ -8,21 +8,23 @@
   grid-gap: 20px;
   grid-template-areas:
     "header"
+    "menu"
     "slider"
-    "feedback"
     "catalog"
-    "footer"
     "content"
-    "menu";
+    "feedback"
+    "footer"
+;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 600px) {
   .grid {
+    grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas:
-      "header     feedback"
-      "menu       menu"
-      "slider     slider"
-      "catalog    content"
-      "footer     footer";
+      "header     header      feedback    feedback"
+      "menu       menu        menu        menu"
+      "slider     slider      slider      slider"
+      "catalog    content     content     content"
+      "footer     footer      footer      footer";
   }
 }

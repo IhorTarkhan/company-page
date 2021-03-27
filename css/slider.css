@@ -1,9 +1,9 @@
 .slider {
   grid-area: slider;
-  max-width: 100%;
+  width: 100%;
 }
 
-.slide {
+.slider .slide {
   opacity: 1;
   transition: opacity 500ms;
   width: 100%;
@@ -11,6 +11,6 @@
   object-fit: cover;
 }
 
-.fadeOut {
+.slider .fadeOut {
   opacity: 0;
 }
