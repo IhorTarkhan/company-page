@@ -1,12 +1,12 @@
 .header {
   grid-area: header;
   display: flex;
-  padding-top: 20px;
   padding-left: 20px;
 }
 
 .header .company-logo {
   flex-grow: 1;
+  padding-top: 30px;
   padding-right: 20px;
 }
 
@@ -19,11 +19,11 @@
 }
 
 .header .company-name {
-  grid-area: header;
+  color: blue;
 }
 
 .header .company-title {
-  grid-area: header;
+  color: gray;
 }
 
 @media (min-width: 960px) {
