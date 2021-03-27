@@ -49,11 +49,41 @@
       <div class="block catalog">catalog</div>
       <div class="block footer">footer</div>
       <div class="feedback">
-        <h2 class="phone-1"><a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a></h2>
-        <h2 class="phone-2"><a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a></h2>
-        <h3 class="contact-us"><a href="#" onclick="alert(1);">Contact us</a></h3>
+        <div class="content-feedback">
+          <h2 class="phone-1">
+            <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
+          </h2>
+          <h2 class="phone-2">
+            <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
+          </h2>
+          <h3 class="contact-us">
+            <a href="#" onclick="openPopup();">Contact us</a>
+          </h3>
+        </div>
+        <div id="content-feedback" class="content-popup hide">
+          <div class="popup">
+            <form class="form">
+              <h2 class="form-title">Contact us</h2>
+
+              <label for="name">Your name</label>
+              <input id="name" type="text" required />
+
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" pattern="[0-9]{5,}" required />
+
+              <label for="mail">Email</label>
+              <input id="mail" type="email" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <input type="submit" class="submit" />
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/feedback.js"></script>
   </body>
 </html>

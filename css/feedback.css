@@ -5,23 +5,78 @@
   justify-content: center;
 }
 
-.feedback .phone-1 a {
+.content-feedback .phone-1 a {
   color: grey;
   text-decoration: none;
 }
 
-.feedback .phone-2 a {
+.content-feedback .phone-2 a {
   color: grey;
   text-decoration: none;
 }
 
-.feedback .contact-us a {
+.content-feedback .contact-us a {
   color: darkgrey;
   text-decoration-style: dashed;
 }
 
-.feedback h2,
+.content-feedback h2,
 h3 {
   color: darkgrey;
   margin: 3px;
+}
+
+.feedback .hide {
+  display: none;
+}
+
+.feedback .content-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  padding-top: 60px;
+}
+
+.feedback .popup {
+  margin: auto;
+  background-color: #fefefe;
+  padding: 20px;
+  width: 70%;
+}
+
+.content-popup .form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-popup .form label {
+  margin-top: 20px;
+}
+
+.content-popup .form .submit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .content-popup .form {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .feedback .popup {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .feedback .popup {
+    width: 30%;
+  }
 }
