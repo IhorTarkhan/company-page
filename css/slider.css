@@ -1,12 +1,8 @@
-.slider {
-  grid-area: slider;
-}
-
-#slider {
+.slide {
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 500ms;
 }
 
-#slider.fadeOut {
+.fadeOut {
   opacity: 0;
 }
