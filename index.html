@@ -19,69 +19,71 @@
     <link rel="stylesheet" type="text/css" href="css/slider.css" />
   </head>
   <body>
-    <div class="grid">
-      <div class="header">
-        <div class="company-logo">
-          <img src="img/icon.png" alt="company-logo" class="company-img" />
+    <div class="page">
+      <div class="app">
+        <div class="header">
+          <div class="company-logo">
+            <img src="img/icon.png" alt="company-logo" class="company-img" />
+          </div>
+          <div class="company-info">
+            <h1 class="company-name">Your company</h1>
+            <h3 class="company-title">The best company</h3>
+          </div>
         </div>
-        <div class="company-info">
-          <h1 class="company-name">Your company</h1>
-          <h3 class="company-title">The best company</h3>
+        <div class="menu">
+          <ul>
+            <li><h2>Main</h2></li>
+            <li><h2>Catalog</h2></li>
+            <li><h2>Delivery</h2></li>
+            <li><h2>Price list</h2></li>
+            <li><h2>Contacts</h2></li>
+          </ul>
         </div>
-      </div>
-      <div class="menu">
-        <ul>
-          <li><h2>Main</h2></li>
-          <li><h2>Catalog</h2></li>
-          <li><h2>Delivery</h2></li>
-          <li><h2>Price list</h2></li>
-          <li><h2>Contacts</h2></li>
-        </ul>
-      </div>
-      <div class="slider">
-        <img class="slide" src="img/Dangerous_Tux.jpg" alt="Dangerous Tux" />
-        <img class="slide" src="img/Dark_Tux.jpg" alt="Dark Tux" />
-        <img class="slide" src="img/Kill_All_Tux.png" alt="Kill All Tux" />
-        <img class="slide" src="img/New_Year_Tux.jpg" alt="New Year Tux" />
-        <img class="slide" src="img/Toilet_Tux.jpg" alt="Toilet Tux" />
-      </div>
-      <div class="block content">content</div>
-      <div class="block catalog">catalog</div>
-      <div class="block footer">footer</div>
-      <div class="feedback">
-        <div class="content-feedback">
-          <h1 class="phone-1">
-            <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
-          </h1>
-          <h1 class="phone-2">
-            <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
-          </h1>
-          <h3 class="contact-us">
-            <a href="#" onclick="openPopup();">Contact us</a>
-          </h3>
+        <div class="slider">
+          <img class="slide" src="img/Dangerous_Tux.jpg" alt="Dangerous Tux" />
+          <img class="slide" src="img/Dark_Tux.jpg" alt="Dark Tux" />
+          <img class="slide" src="img/Kill_All_Tux.png" alt="Kill All Tux" />
+          <img class="slide" src="img/New_Year_Tux.jpg" alt="New Year Tux" />
+          <img class="slide" src="img/Toilet_Tux.jpg" alt="Toilet Tux" />
         </div>
-        <div id="content-feedback" class="content-popup hide">
-          <div class="popup">
-            <form class="form">
-              <h2 class="form-title">Contact us</h2>
+        <div class="block content">content</div>
+        <div class="block catalog">catalog</div>
+        <div class="feedback">
+          <div class="content-feedback">
+            <h1 class="phone-1">
+              <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
+            </h1>
+            <h1 class="phone-2">
+              <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
+            </h1>
+            <h3 class="contact-us">
+              <a href="#" onclick="openPopup();">Contact us</a>
+            </h3>
+          </div>
+          <div id="content-feedback" class="content-popup hide">
+            <div class="popup">
+              <form class="form">
+                <h2 class="form-title">Contact us</h2>
 
-              <label for="name">Your name</label>
-              <input id="name" type="text" required />
+                <label for="name">Your name</label>
+                <input id="name" type="text" required />
 
-              <label for="phone">Phone number</label>
-              <input id="phone" type="tel" pattern="[0-9]{5,}" required />
+                <label for="phone">Phone number</label>
+                <input id="phone" type="tel" pattern="[0-9]{5,}" required />
 
-              <label for="mail">Email</label>
-              <input id="mail" type="email" required />
+                <label for="mail">Email</label>
+                <input id="mail" type="email" required />
 
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
 
-              <input type="submit" class="submit" />
-            </form>
+                <input type="submit" class="submit" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
+      <footer class="block">Footer Content</footer>
     </div>
     <script src="js/slider.js"></script>
     <script src="js/feedback.js"></script>

@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -8,7 +9,13 @@ body {
   border: 1px solid greenyellow;
 }
 
-.grid {
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -17,18 +24,16 @@ body {
     "slider"
     "catalog"
     "content"
-    "feedback"
-    "footer";
+    "feedback";
 }
 
 @media (min-width: 600px) {
-  .grid {
+  .app {
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas:
       "header     header      feedback    feedback"
       "menu       menu        menu        menu"
       "slider     slider      slider      slider"
-      "catalog    content     content     content"
-      "footer     footer      footer      footer";
+      "catalog    content     content     content";
   }
 }
