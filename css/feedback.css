@@ -1,3 +1,27 @@
 .feedback {
   grid-area: feedback;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback .phone-1 a {
+  color: grey;
+  text-decoration: none;
+}
+
+.feedback .phone-2 a {
+  color: grey;
+  text-decoration: none;
+}
+
+.feedback .contact-us a {
+  color: darkgrey;
+  text-decoration-style: dashed;
+}
+
+.feedback h2,
+h3 {
+  color: darkgrey;
+  margin: 3px;
 }
