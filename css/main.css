@@ -1,3 +1,9 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .block {
   border: 1px solid greenyellow;
 }
@@ -12,8 +18,7 @@
     "catalog"
     "content"
     "feedback"
-    "footer"
-;
+    "footer";
 }
 
 @media (min-width: 600px) {
