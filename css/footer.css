@@ -4,13 +4,14 @@ footer {
   width: 100%;
   height: auto;
   display: flex;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
+  flex-direction: column;
+  padding: 10px 0;
+  text-align: center;
 }
 
 footer .footer-contact {
   flex-grow: 1;
+  margin: 10px;
 }
 
 footer .footer-contact p {
@@ -19,6 +20,7 @@ footer .footer-contact p {
 
 footer .footer-menu {
   flex-grow: 1;
+  margin: 10px;
 }
 
 footer .footer-menu ul {
@@ -34,6 +36,9 @@ footer .footer-menu li {
 footer .footer-partners {
   flex-grow: 1;
   display: flex;
+  margin: 10px auto;
+  text-align: left;
+
 }
 
 footer .footer-partners img {
@@ -43,4 +48,18 @@ footer .footer-partners img {
 
 footer .footer-partners p {
   margin: 0;
+}
+
+@media (min-width: 600px) {
+  footer {
+    flex-direction: row;
+    padding: 20px 25px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 960px) {
+  footer {
+    padding: 30px 100px;
+  }
 }
