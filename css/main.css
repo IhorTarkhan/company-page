@@ -5,10 +5,6 @@ body {
   line-height: 22px;
 }
 
-.block {
-  border: 1px solid greenyellow;
-}
-
 .page {
   display: flex;
   flex-direction: column;
