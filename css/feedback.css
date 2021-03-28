@@ -15,12 +15,6 @@
   text-decoration-style: dashed;
 }
 
-.content-feedback h2,
-h3 {
-  color: darkgrey;
-  margin: 3px;
-}
-
 .feedback .hide {
   display: none;
 }
