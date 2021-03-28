@@ -2,5 +2,45 @@ footer {
   box-sizing: border-box;
   margin-top: auto;
   width: 100%;
-  height: 40px;
+  height: auto;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+}
+
+footer .footer-contact {
+  flex-grow: 1;
+}
+
+footer .footer-contact p {
+  margin: 0;
+}
+
+footer .footer-menu {
+  flex-grow: 1;
+}
+
+footer .footer-menu ul {
+  margin: 0;
+}
+
+footer .footer-menu li {
+  display: block;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+footer .footer-partners {
+  flex-grow: 1;
+  display: flex;
+}
+
+footer .footer-partners img {
+  width: 50px;
+  margin-right: 5px;
+}
+
+footer .footer-partners p {
+  margin: 0;
 }

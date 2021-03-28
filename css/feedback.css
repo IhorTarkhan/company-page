@@ -5,12 +5,7 @@
   justify-content: center;
 }
 
-.content-feedback .phone-1 a {
-  color: grey;
-  text-decoration: none;
-}
-
-.content-feedback .phone-2 a {
+.content-feedback .phone a {
   color: grey;
   text-decoration: none;
 }

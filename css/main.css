@@ -25,6 +25,7 @@ body {
     "catalog"
     "content"
     "feedback";
+  margin-bottom: 40px;
 }
 
 @media (min-width: 600px) {
