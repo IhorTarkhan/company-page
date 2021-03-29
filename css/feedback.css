@@ -49,6 +49,14 @@
   padding-right: 20px;
 }
 
+.content-popup .form input {
+  height: 25px;
+}
+
+.content-popup .form textarea {
+  height: 50px;
+}
+
 .content-popup .form label {
   margin-top: 20px;
 }
