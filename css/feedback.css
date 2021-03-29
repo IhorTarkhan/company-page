@@ -5,12 +5,16 @@
   justify-content: center;
 }
 
-.content-feedback .phone a {
+.feedback .content-feedback {
+  margin: auto;
+}
+
+.feedback .content-feedback .phone a {
   color: grey;
   text-decoration: none;
 }
 
-.content-feedback .contact-us a {
+.feedback .content-feedback .contact-us a {
   color: darkgrey;
   text-decoration-style: dashed;
 }
@@ -59,8 +63,13 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .feedback .popup {
     width: 50%;
+  }
+
+  .feedback .content-feedback {
+    margin: 0;
   }
 }
 
