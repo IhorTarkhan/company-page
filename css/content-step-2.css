@@ -10,7 +10,7 @@
 }
 
 .content-step-2 .img-wrapper .logo {
-  width: 15%;
+  width: 33%;
   margin: 10px auto;
 }
 
@@ -19,12 +19,17 @@
   margin: 10px auto;
 }
 
+.content-step-2 .text-wrapper {
+  margin: 0 35px;
+}
+
 @media (min-width: 600px) {
   .content-step-2 .img-wrapper {
     flex-direction: row;
   }
 
   .content-step-2 .img-wrapper .logo {
+    width: 15%;
     margin: auto 10px;
   }
 
