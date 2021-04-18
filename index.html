@@ -13,117 +13,97 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/catalog.css" />
-    <link rel="stylesheet" type="text/css" href="css/content.css" />
-    <link rel="stylesheet" type="text/css" href="css/feedback.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
-    <link rel="stylesheet" type="text/css" href="css/slider.css" />
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 my-4 row">
-          <div class="col-4">
-            <img class="w-100" src="img/icon.png" alt="company-logo" />
-          </div>
-          <div class="col-8">
-            <h2 class="text-primary">Linux catalog</h2>
-            <h4 class="text-secondary">Open sours software</h4>
-          </div>
+    <header class="row m-0">
+      <div class="col-sm-6 my-4 row">
+        <div class="col-4">
+          <img class="w-100" src="img/icon.png" alt="company-logo" />
         </div>
-        <div class="col-sm-6 my-4">
-          <div class="feedback">
-            <h3>
-              <a class="text-dark" href="tel:+38-012-345-67-89">
-                +38 (012) 345-67-89
-              </a>
-            </h3>
-            <h3>
-              <a class="text-dark" href="tel:+38-012-345-67-89">
-                +38 (012) 345-67-89
-              </a>
-            </h3>
-            <h4 class="contact-us">
-              <a
-                class="text-secondary"
-                href="#"
-                data-toggle="modal"
-                data-target="#myModal"
-              >
-                Contact us
-              </a>
-            </h4>
+        <div class="col-8">
+          <h2 class="text-primary">Linux catalog</h2>
+          <h4 class="text-secondary">Open sours software</h4>
+        </div>
+      </div>
+      <div class="col-sm-6 p-4 d-flex flex-column">
+        <a class="text-dark h3" href="tel:+38-012-345-67-89">
+          +38 (012) 345-67-89
+        </a>
+        <a class="text-dark h3" href="tel:+38-012-345-67-89">
+          +38 (012) 345-67-89
+        </a>
+        <a
+          class="text-secondary h4"
+          style="text-decoration-style: dashed"
+          href="#"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          Contact us
+        </a>
 
-            <div class="modal" id="myModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <form class="form">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Contact us</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-group">
-                        <label for="name">Your name:</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Enter name"
-                          id="name"
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="phone">Phone number:</label>
-                        <input
-                          id="phone"
-                          type="tel"
-                          pattern="[0-9]{5,}"
-                          class="form-control"
-                          placeholder="Enter phone"
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Enter email"
-                          id="email"
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea
-                          id="message"
-                          name="message"
-                          class="form-control"
-                          placeholder="Enter your message"
-                          required
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-outline-danger float-left"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <input type="submit" class="btn btn-primary" />
-                    </div>
-                  </form>
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form class="form">
+                <div class="modal-header">
+                  <h4 class="modal-title">Contact us</h4>
                 </div>
-              </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="name">Your name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter name"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input
+                      id="phone"
+                      type="tel"
+                      pattern="[0-9]{5,}"
+                      class="form-control"
+                      placeholder="Enter phone"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      placeholder="Enter your message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger float-left"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <input type="submit" class="btn btn-primary" />
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -131,11 +111,11 @@
     </header>
     <nav class="d-flex justify-content-center">
       <ul class="p-0">
-        <li class="list-inline-item"><h4>Main</h4></li>
-        <li class="list-inline-item"><h4>Catalog</h4></li>
-        <li class="list-inline-item"><h4>Delivery</h4></li>
-        <li class="list-inline-item"><h4>Price list</h4></li>
-        <li class="list-inline-item"><h4>Contacts</h4></li>
+        <li class="list-inline-item h4 m-0">Main</li>
+        <li class="list-inline-item h4 m-0">Catalog</li>
+        <li class="list-inline-item h4 m-0">Delivery</li>
+        <li class="list-inline-item h4 m-0">Price list</li>
+        <li class="list-inline-item h4 m-0">Contacts</li>
       </ul>
     </nav>
     <section
@@ -306,7 +286,10 @@
       </div>
     </footer>
     <script>
-      $(".carousel").carousel({ interval: 1000 });
+      $(".carousel").carousel({ interval: 4000 });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

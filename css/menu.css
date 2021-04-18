@@ -1,8 +1,0 @@
-nav li {
-  padding: 0 1em;
-  border-right: 1px solid;
-}
-
-nav li:last-child {
-  border-right: none;
-}
