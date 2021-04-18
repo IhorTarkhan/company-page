@@ -139,9 +139,9 @@
       </ul>
     </div>
     <div
-            id="carousel-controls"
-            class="carousel slide carousel-fade slide-container"
-            data-ride="carousel"
+      id="carousel-controls"
+      class="carousel slide carousel-fade slide-container"
+      data-ride="carousel"
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -161,30 +161,30 @@
         </div>
       </div>
       <a
-              class="carousel-control-prev"
-              href="#carousel-controls"
-              role="button"
-              data-slide="prev"
+        class="carousel-control-prev"
+        href="#carousel-controls"
+        role="button"
+        data-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       </a>
       <a
-              class="carousel-control-next"
-              href="#carousel-controls"
-              role="button"
-              data-slide="next"
+        class="carousel-control-next"
+        href="#carousel-controls"
+        role="button"
+        data-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </a>
     </div>
-    <div class="app">
-      <div class="catalog">
-        <div class="list">
-          <ul class="main-list">
-            <li><h3>Mobile OS</h3></li>
+    <div class="row m-0">
+      <div class="catalog col-md-3 d-flex justify-content-center">
+        <div>
+          <ul class="list-unstyled text-left h3">
+            <li>Mobile OS</li>
             <li>
-              <h3><u>Desktop OS</u></h3>
-              <ul class="sub-list">
+              <u>Desktop OS</u>
+              <ul class="sub-list list-unstyled text-left h5 ml-4">
                 <li>Android</li>
                 <li><u>Debian</u></li>
                 <li>Red Hat</li>
@@ -192,14 +192,12 @@
                 <li>Slackware</li>
               </ul>
             </li>
-            <li><h3>Server OS</h3></li>
+            <li>Server OS</li>
           </ul>
-        </div>
-        <div class="price">
-          <img src="img/Opensource.png" alt="open-source" />
+          <img class="ml-5" src="img/Opensource.png" alt="open-source" />
         </div>
       </div>
-      <div class="content">
+      <div class="content col-md-9 m-0">
         <div
           class="card"
           onclick="window.location.replace('2-nd-step-linux-mint.html')"
@@ -292,24 +290,26 @@
         </div>
       </div>
     </div>
-    <footer class="row bg-secondary h6 text-white text-center m-0 w-100 py-4">
-      <div class="col-sm-4">
+    <footer class="row bg-secondary h6 text-white m-0 py-4">
+      <div class="col-sm-4 text-center mb-2">
         <p class="m-0">© 2020-2021 Your Company</p>
         <p class="m-0">catalog@linux.com</p>
       </div>
-      <div class="col-sm-4">
-        <ul class="list-unstyled">
-          <li><u>Main</u></li>
-          <li><u>Catalog</u></li>
-          <li><u>Delivery</u></li>
-          <li><u>Prices</u></li>
-          <li><u>Contacts</u></li>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <ul class="list-unstyled text-left">
+          <li class="mb-1"><u>Main</u></li>
+          <li class="mb-1"><u>Catalog</u></li>
+          <li class="mb-1"><u>Delivery</u></li>
+          <li class="mb-1"><u>Prices</u></li>
+          <li class="mb-1"><u>Contacts</u></li>
         </ul>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 d-flex flex-row justify-content-center">
         <img src="img/icon.png" alt="logo" />
-        <p class="m-0"><u>Linux catalog</u></p>
-        <p class="m-0">Open sours software</p>
+        <div class="ml-2">
+          <p class="m-0"><u>Linux catalog</u></p>
+          <p class="m-0">Open sours software</p>
+        </div>
       </div>
     </footer>
     <script>
