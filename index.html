@@ -5,12 +5,16 @@
     <title>Linux catalog</title>
     <link rel="icon" href="img/icon.png" />
 
+    <!-- Google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,208 +35,210 @@
     <link rel="stylesheet" type="text/css" href="css/slider.css" />
   </head>
   <body>
-    <div class="page">
-      <div class="app">
-        <div class="header">
-          <div class="company-logo">
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 row pt-4">
+          <div class="col-4">
             <img src="img/icon.png" alt="company-logo" class="company-img" />
           </div>
-          <div class="company-info">
-            <h1 class="company-name">Linux catalog</h1>
-            <h3 class="company-title">Open sours software</h3>
+          <div class="col-8">
+            <h2 class="text-primary">Linux catalog</h2>
+            <h4 class="text-secondary">Open sours software</h4>
           </div>
         </div>
-        <div class="menu">
-          <ul>
-            <li><h2>Main</h2></li>
-            <li><h2>Catalog</h2></li>
-            <li><h2>Delivery</h2></li>
-            <li><h2>Price list</h2></li>
-            <li><h2>Contacts</h2></li>
-          </ul>
-        </div>
-        <div class="slider">
-          <img class="slide" src="img/Dangerous_Tux.jpg" alt="Dangerous Tux" />
-          <img class="slide" src="img/Dark_Tux.jpg" alt="Dark Tux" />
-          <img class="slide" src="img/Kill_All_Tux.png" alt="Kill All Tux" />
-          <img class="slide" src="img/New_Year_Tux.jpg" alt="New Year Tux" />
-          <img class="slide" src="img/Toilet_Tux.jpg" alt="Toilet Tux" />
-        </div>
-        <div class="catalog">
-          <div class="list">
-            <ul class="main-list">
-              <li><h3>Mobile OS</h3></li>
-              <li>
-                <h3><u>Desktop OS</u></h3>
-                <ul class="sub-list">
-                  <li>Android</li>
-                  <li><u>Debian</u></li>
-                  <li>Red Hat</li>
-                  <li>Arch Linux</li>
-                  <li>Slackware</li>
-                </ul>
-              </li>
-              <li><h3>Server OS</h3></li>
-            </ul>
-          </div>
-          <div class="price">
-            <img src="img/Opensource.png" alt="open-source" />
-          </div>
-        </div>
-        <div class="content">
-          <div
-            class="card"
-            onclick="window.location.replace('2-nd-step-linux-mint.html')"
-          >
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Linux_Mint.png"
-                alt="Logo_Linux_Mint"
-              />
+        <div class="col-sm-6">
+          <div class="feedback">
+            <div class="content-feedback">
+              <h1 class="phone">
+                <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
+              </h1>
+              <h1 class="phone">
+                <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
+              </h1>
+              <h3 class="contact-us">
+                <a href="#" onclick="openPopup();">Contact us</a>
+              </h3>
             </div>
-            <div class="title-container">
-              <h3>Linux Mint</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-          <div
-            class="card"
-            onclick="window.location.replace('2-nd-step-ubuntu.html')"
-          >
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Ubuntu.png"
-                alt="Logo_Ubuntu"
-              />
-            </div>
-            <div class="title-container">
-              <h3>Ubuntu</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-          <div class="card" onclick="alert('Click on first or second card')">
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Kubuntu.png"
-                alt="Logo_Kubuntu"
-              />
-            </div>
-            <div class="title-container">
-              <h3>Kubuntu</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-          <div class="card" onclick="alert('Click on first or second card')">
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Xubuntu.png"
-                alt="Logo_Xubuntu"
-              />
-            </div>
-            <div class="title-container">
-              <h3>Xubuntu</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-          <div class="card" onclick="alert('Click on first or second card')">
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Debian.png"
-                alt="Logo_Debian"
-              />
-            </div>
-            <div class="title-container">
-              <h3>Debian</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-          <div class="card" onclick="alert('Click on first or second card')">
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Lubuntu.png"
-                alt="Logo_Lubuntu"
-              />
-            </div>
-            <div class="title-container">
-              <h3>Lubuntu</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-          <div class="card" onclick="alert('Click on first or second card')">
-            <div class="img-container">
-              <img
-                src="img/distributions-logo/Logo_Ubuntu_GNOME.png"
-                alt="Logo_Ubuntu_GNOME"
-              />
-            </div>
-            <div class="title-container">
-              <h3>Ubuntu GNOME</h3>
-              <p>The best distribution ever!</p>
-            </div>
-          </div>
-        </div>
-        <div class="feedback">
-          <div class="content-feedback">
-            <h1 class="phone">
-              <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
-            </h1>
-            <h1 class="phone">
-              <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
-            </h1>
-            <h3 class="contact-us">
-              <a href="#" onclick="openPopup();">Contact us</a>
-            </h3>
-          </div>
-          <div id="content-feedback" class="content-popup hide">
-            <div class="popup">
-              <form class="form">
-                <h2 class="form-title">Contact us</h2>
+            <div id="content-feedback" class="content-popup hide">
+              <div class="popup">
+                <form class="form">
+                  <h2 class="form-title">Contact us</h2>
 
-                <label for="name">Your name</label>
-                <input id="name" type="text" required />
+                  <label for="name">Your name</label>
+                  <input id="name" type="text" required />
 
-                <label for="phone">Phone number</label>
-                <input id="phone" type="tel" pattern="[0-9]{5,}" required />
+                  <label for="phone">Phone number</label>
+                  <input id="phone" type="tel" pattern="[0-9]{5,}" required />
 
-                <label for="mail">Email</label>
-                <input id="mail" type="email" required />
+                  <label for="mail">Email</label>
+                  <input id="mail" type="email" required />
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
 
-                <input type="submit" class="submit" />
-              </form>
+                  <input type="submit" class="submit" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="container-fluid pt-4">
-        <div class="row">
-          <div class="col-sm-4">
-            <p>© 2020-2021 Your Company</p>
-            <p>catalog@linux.com</p>
+    </header>
+    <div class="app">
+      <div class="menu">
+        <ul>
+          <li><h2>Main</h2></li>
+          <li><h2>Catalog</h2></li>
+          <li><h2>Delivery</h2></li>
+          <li><h2>Price list</h2></li>
+          <li><h2>Contacts</h2></li>
+        </ul>
+      </div>
+      <div class="slider">
+        <img class="slide" src="img/Dangerous_Tux.jpg" alt="Dangerous Tux" />
+        <img class="slide" src="img/Dark_Tux.jpg" alt="Dark Tux" />
+        <img class="slide" src="img/Kill_All_Tux.png" alt="Kill All Tux" />
+        <img class="slide" src="img/New_Year_Tux.jpg" alt="New Year Tux" />
+        <img class="slide" src="img/Toilet_Tux.jpg" alt="Toilet Tux" />
+      </div>
+      <div class="catalog">
+        <div class="list">
+          <ul class="main-list">
+            <li><h3>Mobile OS</h3></li>
+            <li>
+              <h3><u>Desktop OS</u></h3>
+              <ul class="sub-list">
+                <li>Android</li>
+                <li><u>Debian</u></li>
+                <li>Red Hat</li>
+                <li>Arch Linux</li>
+                <li>Slackware</li>
+              </ul>
+            </li>
+            <li><h3>Server OS</h3></li>
+          </ul>
+        </div>
+        <div class="price">
+          <img src="img/Opensource.png" alt="open-source" />
+        </div>
+      </div>
+      <div class="content">
+        <div
+          class="card"
+          onclick="window.location.replace('2-nd-step-linux-mint.html')"
+        >
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Linux_Mint.png"
+              alt="Logo_Linux_Mint"
+            />
           </div>
-          <div class="col-sm-4">
-            <ul>
-              <li>Main</li>
-              <li>Catalog</li>
-              <li>Delivery</li>
-              <li>Price list</li>
-              <li>Contacts</li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <div>
-              <img src="img/icon.png" alt="logo" />
-            </div>
-            <div>
-              <p><u>Linux catalog</u></p>
-              <p>Open sours software</p>
-            </div>
+          <div class="title-container">
+            <h3>Linux Mint</h3>
+            <p>The best distribution ever!</p>
           </div>
         </div>
-      </footer>
+        <div
+          class="card"
+          onclick="window.location.replace('2-nd-step-ubuntu.html')"
+        >
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Ubuntu.png"
+              alt="Logo_Ubuntu"
+            />
+          </div>
+          <div class="title-container">
+            <h3>Ubuntu</h3>
+            <p>The best distribution ever!</p>
+          </div>
+        </div>
+        <div class="card" onclick="alert('Click on first or second card')">
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Kubuntu.png"
+              alt="Logo_Kubuntu"
+            />
+          </div>
+          <div class="title-container">
+            <h3>Kubuntu</h3>
+            <p>The best distribution ever!</p>
+          </div>
+        </div>
+        <div class="card" onclick="alert('Click on first or second card')">
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Xubuntu.png"
+              alt="Logo_Xubuntu"
+            />
+          </div>
+          <div class="title-container">
+            <h3>Xubuntu</h3>
+            <p>The best distribution ever!</p>
+          </div>
+        </div>
+        <div class="card" onclick="alert('Click on first or second card')">
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Debian.png"
+              alt="Logo_Debian"
+            />
+          </div>
+          <div class="title-container">
+            <h3>Debian</h3>
+            <p>The best distribution ever!</p>
+          </div>
+        </div>
+        <div class="card" onclick="alert('Click on first or second card')">
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Lubuntu.png"
+              alt="Logo_Lubuntu"
+            />
+          </div>
+          <div class="title-container">
+            <h3>Lubuntu</h3>
+            <p>The best distribution ever!</p>
+          </div>
+        </div>
+        <div class="card" onclick="alert('Click on first or second card')">
+          <div class="img-container">
+            <img
+              src="img/distributions-logo/Logo_Ubuntu_GNOME.png"
+              alt="Logo_Ubuntu_GNOME"
+            />
+          </div>
+          <div class="title-container">
+            <h3>Ubuntu GNOME</h3>
+            <p>The best distribution ever!</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer class="pt-4 row bg-secondary text-white text-center px-4">
+      <div class="col-sm-4">
+        <p class="m-0">© 2020-2021 Your Company</p>
+        <p class="m-0">catalog@linux.com</p>
+      </div>
+      <div class="col-sm-4">
+        <ul class="list-unstyled">
+          <li><u>Main</u></li>
+          <li><u>Catalog</u></li>
+          <li><u>Delivery</u></li>
+          <li><u>Prices</u></li>
+          <li><u>Contacts</u></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          <img src="img/icon.png" alt="logo" />
+        </div>
+        <div>
+          <p class="m-0"><u>Linux catalog</u></p>
+          <p class="m-0">Open sours software</p>
+        </div>
+      </div>
+    </footer>
     <script src="js/slider.js"></script>
     <script src="js/feedback.js"></script>
   </body>
