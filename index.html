@@ -138,14 +138,46 @@
         <li class="list-inline-item"><h4>Contacts</h4></li>
       </ul>
     </div>
-    <div class="app">
-      <div class="slider">
-        <img class="slide" src="img/Dangerous_Tux.jpg" alt="Dangerous Tux" />
-        <img class="slide" src="img/Dark_Tux.jpg" alt="Dark Tux" />
-        <img class="slide" src="img/Kill_All_Tux.png" alt="Kill All Tux" />
-        <img class="slide" src="img/New_Year_Tux.jpg" alt="New Year Tux" />
-        <img class="slide" src="img/Toilet_Tux.jpg" alt="Toilet Tux" />
+    <div
+            id="carousel-controls"
+            class="carousel slide carousel-fade slide-container"
+            data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Dangerous_Tux.jpg" alt="Dangerous Tux" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/Dark_Tux.jpg" alt="Dark Tux" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/Kill_All_Tux.png" alt="Kill All Tux" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/New_Year_Tux.jpg" alt="New Year Tux" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/Toilet_Tux.jpg" alt="Toilet Tux" />
+        </div>
       </div>
+      <a
+              class="carousel-control-prev"
+              href="#carousel-controls"
+              role="button"
+              data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a
+              class="carousel-control-next"
+              href="#carousel-controls"
+              role="button"
+              data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="app">
       <div class="catalog">
         <div class="list">
           <ul class="main-list">
@@ -260,7 +292,7 @@
         </div>
       </div>
     </div>
-    <footer class="pt-4 row bg-secondary text-white text-center px-4">
+    <footer class="row bg-secondary h6 text-white text-center m-0 w-100 py-4">
       <div class="col-sm-4">
         <p class="m-0">© 2020-2021 Your Company</p>
         <p class="m-0">catalog@linux.com</p>
@@ -280,6 +312,8 @@
         <p class="m-0">Open sours software</p>
       </div>
     </footer>
-    <script src="js/slider.js"></script>
+    <script>
+      $(".carousel").carousel({ interval: 1000 });
+    </script>
   </body>
 </html>
