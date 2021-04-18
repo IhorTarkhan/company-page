@@ -1,14 +1,14 @@
-.content .card {
+aside .card {
   width: 200px;
   margin: 10px;
 }
 
-.content .card:hover {
+aside .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
-.content img {
+aside .card img {
   width: 80%;
   margin: 10%;
 }
