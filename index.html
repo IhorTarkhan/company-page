@@ -37,7 +37,7 @@
   <body>
     <header class="container-fluid">
       <div class="row">
-        <div class="col-sm-6 row pt-4">
+        <div class="col-sm-6 my-4 row">
           <div class="col-4">
             <img src="img/icon.png" alt="company-logo" class="company-img" />
           </div>
@@ -46,38 +46,91 @@
             <h4 class="text-secondary">Open sours software</h4>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 my-4">
           <div class="feedback">
-            <div class="content-feedback">
-              <h1 class="phone">
-                <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
-              </h1>
-              <h1 class="phone">
-                <a href="tel:+38-012-345-67-89">+38 (012) 345-67-89</a>
-              </h1>
-              <h3 class="contact-us">
-                <a href="#" onclick="openPopup();">Contact us</a>
-              </h3>
-            </div>
-            <div id="content-feedback" class="content-popup hide">
-              <div class="popup">
-                <form class="form">
-                  <h2 class="form-title">Contact us</h2>
+            <h3>
+              <a class="text-dark" href="tel:+38-012-345-67-89">
+                +38 (012) 345-67-89
+              </a>
+            </h3>
+            <h3>
+              <a class="text-dark" href="tel:+38-012-345-67-89">
+                +38 (012) 345-67-89
+              </a>
+            </h3>
+            <h4 class="contact-us">
+              <a
+                class="text-secondary"
+                href="#"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                Contact us
+              </a>
+            </h4>
 
-                  <label for="name">Your name</label>
-                  <input id="name" type="text" required />
-
-                  <label for="phone">Phone number</label>
-                  <input id="phone" type="tel" pattern="[0-9]{5,}" required />
-
-                  <label for="mail">Email</label>
-                  <input id="mail" type="email" required />
-
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required></textarea>
-
-                  <input type="submit" class="submit" />
-                </form>
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form class="form">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Contact us</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="name">Your name:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter name"
+                          id="name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone number:</label>
+                        <input
+                          id="phone"
+                          type="tel"
+                          pattern="[0-9]{5,}"
+                          class="form-control"
+                          placeholder="Enter phone"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter email"
+                          id="email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          class="form-control"
+                          placeholder="Enter your message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger float-left"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <input type="submit" class="btn btn-primary" />
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -230,16 +283,11 @@
         </ul>
       </div>
       <div class="col-sm-4">
-        <div>
-          <img src="img/icon.png" alt="logo" />
-        </div>
-        <div>
-          <p class="m-0"><u>Linux catalog</u></p>
-          <p class="m-0">Open sours software</p>
-        </div>
+        <img src="img/icon.png" alt="logo" />
+        <p class="m-0"><u>Linux catalog</u></p>
+        <p class="m-0">Open sours software</p>
       </div>
     </footer>
     <script src="js/slider.js"></script>
-    <script src="js/feedback.js"></script>
   </body>
 </html>
