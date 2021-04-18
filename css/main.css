@@ -4,27 +4,3 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
-
-.app {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "header"
-    "menu"
-    "slider"
-    "catalog"
-    "content"
-    "feedback";
-  margin-bottom: 40px;
-}
-
-@media (min-width: 600px) {
-  .app {
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-areas:
-      "header     header      feedback    feedback"
-      "menu       menu        menu        menu"
-      "slider     slider      slider      slider"
-      "catalog    content     content     content";
-  }
-}
