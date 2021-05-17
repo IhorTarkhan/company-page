@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Linux catalog</title>
+    <link rel="icon" href="img/icon.png" />
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body onload="addRows()">
+    <table id="table-feedbacks">
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Message</th>
+      </tr>
+    </table>
+    <button onclick="localStorage.clear(); location.reload()">
+      Clear history
+    </button>
+    <script>
+      function uuidv4() {
+        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+          /[xy]/g,
+          function (c) {
+            const r = (Math.random() * 16) | 0,
+              v = c === "x" ? r : (r & 0x3) | 0x8;
+            return v.toString(16);
+          }
+        );
+      }
+      const addRows = () => {
+        const correctPassword = uuidv4();
+        console.log(correctPassword);
+        const userPassword = prompt("input password");
+        if (userPassword !== correctPassword) {
+          throw "Hacker!!!";
+        }
+        const feedbacks = JSON.parse(localStorage.getItem("feedbacks") || "[]");
+        const rows = feedbacks.map((it) => {
+          const newRow = document.createElement("tr");
+          const newCellName = document.createElement("td");
+          newCellName.appendChild(document.createTextNode(it.name));
+          const newCellPhone = document.createElement("td");
+          newCellPhone.appendChild(document.createTextNode(it.phone));
+          const newCellEmail = document.createElement("td");
+          newCellEmail.appendChild(document.createTextNode(it.email));
+          const newCellMessage = document.createElement("td");
+          newCellMessage.appendChild(document.createTextNode(it.message));
+          newRow.append(
+            newCellName,
+            newCellPhone,
+            newCellEmail,
+            newCellMessage
+          );
+          return newRow;
+        });
+        rows.forEach((it) =>
+          document.getElementById("table-feedbacks").appendChild(it)
+        );
+      };
+    </script>
+  </body>
+</html>
