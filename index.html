@@ -46,25 +46,25 @@
         <div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
-              <form class="form">
+              <form class="form" onsubmit="onSubmit();">
                 <div class="modal-header">
                   <h4 class="modal-title">Contact us</h4>
                 </div>
                 <div class="modal-body">
                   <div class="form-group">
-                    <label for="name">Your name:</label>
+                    <label for="name-feedback">Your name:</label>
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Enter name"
-                      id="name"
+                      id="name-feedback"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="phone">Phone number:</label>
+                    <label for="phone-feedback">Phone number:</label>
                     <input
-                      id="phone"
+                      id="phone-feedback"
                       type="tel"
                       pattern="[0-9]{5,}"
                       class="form-control"
@@ -73,19 +73,19 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="email">Email address:</label>
+                    <label for="email-feedback">Email address:</label>
                     <input
                       type="email"
                       class="form-control"
                       placeholder="Enter email"
-                      id="email"
+                      id="email-feedback"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="message">Message:</label>
+                    <label for="message-feedback">Message:</label>
                     <textarea
-                      id="message"
+                      id="message-feedback"
                       name="message"
                       class="form-control"
                       placeholder="Enter your message"
@@ -286,7 +286,23 @@
       </div>
     </footer>
     <script>
-      $(".carousel").carousel({ interval: 4000 });
+      const onSubmit = () => {
+        const name = document.getElementById("name-feedback").value;
+        const phone = document.getElementById("phone-feedback").value;
+        const email = document.getElementById("email-feedback").value;
+        const message = document.getElementById("message-feedback").value;
+
+        const feedbacks = JSON.parse(localStorage.getItem("feedbacks") || "[]");
+        feedbacks.push({
+          name: name,
+          phone: phone,
+          email: email,
+          message: message,
+        });
+        console.log(feedbacks);
+        localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
+        console.log(1);
+      };
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
